@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Sıla Erikci</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sıla Erikci-Arserim</title>
+  <meta name="description" content="Sıla Erikci-Arserim — Ph.D. student in Economics at Bilkent University. Spatial economics, economic history, international trade, political economy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="cv.pdf">CV</a>
-    </nav>
+
+  <header class="site-header">
+    <div class="wrap">
+      <p class="site-name"><a href="index.html">Sıla Erikci-Arserim</a></p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">About</a></li>
+          <li><a href="research.html">Research</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
-    <aside class="sidebar">
-      <h2>Sıla Erikci</h2>
-      <br>Bilkent University</p>
-      <ul class="links">
-        <li>📍 Ankara, Türkiye</li>
-        <li><a href="mailto:sila.erikci@bilkent.edu.tr">✉ Email</a></li>
-        <li><a href="https://www.linkedin.com/in/s%C4%B1la-erikci-6b0295ab/">💼LinkedIn</a></li>
-        <li><a href="https://github.com/silaerikci">🐱 GitHub</a></li>
+  <main>
+    <div class="wrap">
+      <section class="about">
 
-      </ul>
-    </aside>
+        <!-- PHOTO: to change it, replace images/profile.jpg with a new file of the same name -->
+        <img class="profile-pic" src="images/profile.jpg" alt="Sıla Erikci-Arserim" width="180" height="180">
 
-    <main>
-      <section>
-        <h1>About</h1>
-        <p>I am a Ph.D. student in Economics at Bilkent University. This will be my personal academic website soon, I hope....</p>
-        <p>Email: sila.erikci@bilkent.edu.tr</p>
+        <!-- CONTACT + LINKS -->
+        <div class="contact">
+          <p><a href="mailto:sila.erikci@bilkent.edu.tr">sila.erikci@bilkent.edu.tr</a></p>
+          <p>Department of Economics<br>
+             Bilkent University<br>
+             Ankara, Türkiye</p>
+          <div class="icon-links">
+            <!-- CV: the PDF goes in docs/ under exactly this file name -->
+            <a href="docs/Erikci_Arserim_CV.pdf" target="_blank" rel="noopener" aria-label="Curriculum vitae (PDF)" title="CV">CV</a>
+            <a href="https://www.linkedin.com/in/s%C4%B1la-erikci-arserim-6b0295ab/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <!-- BIO (draft) -->
+        <div class="bio">
+          <p>I am a Ph.D. student in Economics at Bilkent University, supervised by Banu Demir, and a visiting Ph.D. student at LMU Munich in <span class="nb">2026&ndash;27</span>, hosted by Carsten Eckel.</p>
+          <p>My research interests are in spatial economics and economic history, with secondary interests in international trade and political economy. I study how transport infrastructure, trade networks, and industrial policy shaped the economic geography of the late Ottoman Empire and Turkey.</p>
+          <p>You can find my CV <a href="docs/Erikci_Arserim_CV.pdf" target="_blank" rel="noopener">here</a>.</p>
+        </div>
+
       </section>
+    </div>
+  </main>
 
-    </main>
-  </div>
+  <footer class="site-footer">
+    <div class="wrap">&copy; 2026 Sıla Erikci-Arserim</div>
+  </footer>
+
 </body>
 </html>
