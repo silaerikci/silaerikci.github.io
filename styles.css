@@ -260,6 +260,22 @@ main.home { padding-top: clamp(44px, 9vh, 110px); }
   .paper-thumb img { width: 100%; }
 }
 
+/* Teaching: course code + name list */
+.course-list {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+.course-list li { padding: 2px 0; }
+.course-code {
+  display: inline-block;
+  min-width: 78px;
+  color: var(--muted);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
 .nb { white-space: nowrap; }
 
 /* ---------- Footer ---------- */
