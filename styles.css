@@ -25,6 +25,10 @@ body {
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-size: 15px;
   line-height: 1.65;
+  /* keep the footer at the bottom of the window on short pages */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -89,7 +93,10 @@ a:focus-visible {
 
 /* ---------- About page: photo | contact | bio ---------- */
 
-main { padding: 44px 0 64px; }
+main { flex: 1 0 auto; padding: 44px 0 64px; }
+
+/* About page: content at the top, a little more air on tall screens */
+main.home { padding-top: clamp(44px, 9vh, 110px); }
 
 .about {
   display: grid;
