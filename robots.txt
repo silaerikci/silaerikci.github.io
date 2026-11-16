@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://silaerikci.github.io/sitemap.xml
