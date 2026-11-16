@@ -229,25 +229,51 @@ main.home { padding-top: clamp(44px, 9vh, 110px); }
 .paper-card .paper-body { flex: 1; min-width: 0; }
 .paper-card .paper-summary { margin-top: 10px; }
 
-/* Click-to-open full abstract */
-.full-abstract { margin-top: 10px; }
-.full-abstract summary {
-  display: inline-block;
-  color: var(--accent);
-  font-size: 13.5px;
+/* Links row under each paper, Teti-style: abstract | pdf | slides */
+.pub-links {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 11.5px;
   font-weight: 600;
-  cursor: pointer;
-  list-style: none;
+  line-height: 1.6;
 }
-.full-abstract summary::-webkit-details-marker { display: none; }
-.full-abstract summary::before { content: "\25B8\00a0"; }
-.full-abstract[open] summary::before { content: "\25BE\00a0"; }
-.full-abstract summary:hover { color: var(--accent-dark); }
-.full-abstract p {
-  margin: 8px 0 0;
-  font-size: 13.5px;
+.pub-links .sep {
+  margin: 0 6px;
+  color: #d8cfcc;
+  font-weight: 400;
+}
+.text-link,
+.toggle-abstract {
+  color: var(--accent);
+  text-decoration: none;
+}
+.toggle-abstract {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+.text-link:hover,
+.toggle-abstract:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.toggle-abstract:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.abstract {
+  margin: 10px 0 0;
+  color: #4a4544;
+  font-size: 13px;
   line-height: 1.65;
-  max-width: 72ch;
+  max-width: 76ch;
 }
 
 /* Plain list entries (Teti-style) */
@@ -260,12 +286,6 @@ main.home { padding-top: clamp(44px, 9vh, 110px); }
   .paper-thumb img { width: 100%; }
 }
 
-.paper-links {
-  margin: 4px 0 0;
-  font-size: 14px;
-  color: var(--muted);
-}
-.paper-list .full-abstract { margin-top: 6px; }
 
 /* Teaching: course code + name list */
 .course-list {
@@ -277,10 +297,11 @@ main.home { padding-top: clamp(44px, 9vh, 110px); }
 .course-list li { padding: 2px 0; }
 .course-code {
   display: inline-block;
-  min-width: 78px;
+  min-width: 82px;
   color: var(--muted);
-  font-weight: 500;
-  font-variant-numeric: tabular-nums;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12.5px;
+  font-weight: 600;
 }
 
 .nb { white-space: nowrap; }
