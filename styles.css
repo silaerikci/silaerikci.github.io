@@ -50,7 +50,20 @@ a:focus-visible {
 
 /* ---------- Header: name left, menu right ---------- */
 
-.site-header { border-bottom: 1px solid var(--rule); }
+/* Header and footer rules span the text column only (from the name to the menu), Teti-style */
+.site-header .wrap,
+.site-footer .wrap { position: relative; }
+.site-header .wrap::after,
+.site-footer .wrap::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  height: 1px;
+  background: var(--rule);
+}
+.site-header .wrap::after { bottom: 0; }
+.site-footer .wrap::before { top: 0; }
 
 .site-header .wrap {
   display: flex;
@@ -309,7 +322,6 @@ main.home { padding-top: clamp(44px, 9vh, 110px); }
 /* ---------- Footer ---------- */
 
 .site-footer {
-  border-top: 1px solid var(--rule);
   color: var(--muted);
   font-size: 13px;
 }
