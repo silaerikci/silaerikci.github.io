@@ -260,6 +260,13 @@ main.home { padding-top: clamp(44px, 9vh, 110px); }
   .paper-thumb img { width: 100%; }
 }
 
+.paper-links {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+.paper-list .full-abstract { margin-top: 6px; }
+
 /* Teaching: course code + name list */
 .course-list {
   margin: 8px 0 0;
