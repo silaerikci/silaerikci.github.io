@@ -133,6 +133,7 @@ main.home { padding-top: clamp(44px, 9vh, 110px); }
   white-space: nowrap;
 }
 .contact p { margin: 0 0 12px; }
+.contact > p:first-child { margin-top: 0; }
 
 .icon-links {
   display: flex;
@@ -152,6 +153,7 @@ main.home { padding-top: clamp(44px, 9vh, 110px); }
   font-weight: 600;
   line-height: 1;
 }
+.icon-links svg { width: 17px; height: 17px; display: block; }
 .icon-links a:hover {
   background: var(--accent);
   color: #fff;
